@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: Programmable IoT Hardware with GPS — Projscope</title>
+  <meta name="description" content="How Projscope delivered a production-ready GPS tracking solution on Blues.io hardware — from proof of concept to deployment in under 4 weeks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header--scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+          <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+          <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+          <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#1a1a2e"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+        </svg>
+        <span class="header__logo-text">Projscope</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <a href="index.html#services" class="header__nav-link">Services</a>
+        <a href="index.html#products" class="header__nav-link">Products</a>
+        <a href="index.html#process" class="header__nav-link">Process</a>
+        <a href="index.html#contact" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color scheme">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <a href="index.html#contact" class="btn btn--primary header__cta">Get Started</a>
+      <button class="header__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Case Study Hero -->
+  <section class="cs-hero">
+    <div class="cs-hero__bg">
+      <div class="cs-hero__glow"></div>
+    </div>
+    <div class="container">
+      <a href="index.html#products" class="cs-hero__back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Products
+      </a>
+      <div class="cs-hero__meta">
+        <span class="cs-hero__tag">Case Study</span>
+        <span class="cs-hero__tag cs-hero__tag--accent">IoT &amp; Embedded</span>
+      </div>
+      <h1 class="cs-hero__title">Programmable IoT Hardware<br>with GPS Tracking</h1>
+      <p class="cs-hero__subtitle">Delivering production-ready GPS positioning on Blues.io embedded hardware — from initial research to a fully tested, deployed solution that exceeded client expectations.</p>
+
+      <div class="cs-hero__highlights">
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">4 Weeks</span>
+          <span class="cs-highlight__label">Delivery Time</span>
+        </div>
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">99.2%</span>
+          <span class="cs-highlight__label">GPS Accuracy</span>
+        </div>
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">Blues.io</span>
+          <span class="cs-highlight__label">Hardware Platform</span>
+        </div>
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">Exceeded</span>
+          <span class="cs-highlight__label">Client Expectations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-layout">
+        <aside class="cs-sidebar">
+          <div class="cs-info-card">
+            <h4>Project Details</h4>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Client</span>
+              <span class="cs-info-value">Confidential (IoT Startup)</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Industry</span>
+              <span class="cs-info-value">Fleet Management / Logistics</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Duration</span>
+              <span class="cs-info-value">4 Weeks</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Team Size</span>
+              <span class="cs-info-value">2 Engineers</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Deliverable</span>
+              <span class="cs-info-value">Production Firmware + API</span>
+            </div>
+          </div>
+          <div class="cs-info-card">
+            <h4>Technologies</h4>
+            <div class="cs-tech-tags">
+              <span>Blues.io Notecard</span>
+              <span>C / C++</span>
+              <span>GPS / GNSS</span>
+              <span>Cellular IoT</span>
+              <span>Python</span>
+              <span>REST API</span>
+              <span>MQTT</span>
+              <span>JSON</span>
+            </div>
+          </div>
+          <div class="cs-info-card">
+            <h4>Skills Demonstrated</h4>
+            <div class="cs-skills">
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:92%"></div>
+                <span class="cs-skill__name">Hardware Integration</span>
+              </div>
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:88%"></div>
+                <span class="cs-skill__name">GPS / Location Services</span>
+              </div>
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:85%"></div>
+                <span class="cs-skill__name">IoT Protocols</span>
+              </div>
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:92%"></div>
+                <span class="cs-skill__name">Client Communication</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="cs-content">
+          <!-- The Challenge -->
+          <div class="cs-block">
+            <div class="cs-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <h2>The Challenge</h2>
+            <p>Our client, an emerging IoT startup in the logistics space, needed to add reliable GPS tracking capabilities to their programmable hardware devices built on the Blues.io Notecard platform. The core challenge was achieving consistent, accurate GPS positioning across highly variable real-world conditions.</p>
+            <p>The device needed to report GPS coordinates reliably whether operating indoors near windows, outdoors in open fields, or in dense urban environments with signal interference. Additionally, the solution had to be power-efficient for battery-operated deployments, maintain connectivity over cellular networks, and provide an intuitive data interface for end users.</p>
+            <div class="cs-callout">
+              <strong>Key Constraints:</strong> Variable signal environments, battery-powered operation, cellular-only connectivity, and a tight 4-week delivery timeline.
+            </div>
+          </div>
+
+          <!-- Our Approach -->
+          <div class="cs-block">
+            <div class="cs-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h2>Our Approach</h2>
+            <p>We structured the engagement around a four-phase methodology designed to minimize risk and maximize client visibility throughout the process.</p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="cs-timeline">
+            <div class="cs-timeline__item">
+              <div class="cs-timeline__marker">
+                <span>1</span>
+              </div>
+              <div class="cs-timeline__content">
+                <div class="cs-timeline__header">
+                  <h3>Research &amp; Proof of Concept</h3>
+                  <span class="cs-timeline__duration">Week 1</span>
+                </div>
+                <p>Conducted deep-dive analysis of the Blues.io Notecard hardware capabilities, GPS/GNSS module specifications, and manufacturer documentation. Built an initial proof-of-concept to validate that the hardware could meet accuracy requirements before committing to full development.</p>
+                <ul>
+                  <li>Evaluated GPS module cold-start and warm-start performance</li>
+                  <li>Benchmarked positioning accuracy across test scenarios</li>
+                  <li>Aligned PoC results with client expectations and success criteria</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs-timeline__item">
+              <div class="cs-timeline__marker">
+                <span>2</span>
+              </div>
+              <div class="cs-timeline__content">
+                <div class="cs-timeline__header">
+                  <h3>SDK Integration &amp; Environment Setup</h3>
+                  <span class="cs-timeline__duration">Week 1</span>
+                </div>
+                <p>In parallel with research, acquired and integrated the manufacturer's SDKs, APIs, and development tools. Established the firmware development environment, configured cellular connectivity, and set up the cloud-side data pipeline for receiving and processing GPS reports.</p>
+                <ul>
+                  <li>Configured Blues.io Notehub cloud backend</li>
+                  <li>Set up CI pipeline for firmware builds</li>
+                  <li>Established secure device-to-cloud communication</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs-timeline__item">
+              <div class="cs-timeline__marker">
+                <span>3</span>
+              </div>
+              <div class="cs-timeline__content">
+                <div class="cs-timeline__header">
+                  <h3>Development &amp; Rigorous Testing</h3>
+                  <span class="cs-timeline__duration">Weeks 2 &ndash; 3</span>
+                </div>
+                <p>Built the core GPS tracking firmware following manufacturer best practices, with extensive testing across diverse real-world scenarios. Maintained transparent, ongoing communication with the client through weekly demos and progress reports.</p>
+                <ul>
+                  <li>Tested across variable signal strengths (strong, weak, intermittent)</li>
+                  <li>Validated indoor, outdoor, and urban canyon environments</li>
+                  <li>Implemented power management for extended battery life</li>
+                  <li>Built REST API for coordinate retrieval and device management</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs-timeline__item">
+              <div class="cs-timeline__marker">
+                <span>4</span>
+              </div>
+              <div class="cs-timeline__content">
+                <div class="cs-timeline__header">
+                  <h3>Delivery &amp; Client Feedback</h3>
+                  <span class="cs-timeline__duration">Week 4</span>
+                </div>
+                <p>Delivered the finalized firmware, API documentation, and deployment guide. Conducted hands-on walkthrough sessions with the client team, actively gathered feedback, and made final refinements to ensure complete satisfaction.</p>
+                <ul>
+                  <li>Delivered comprehensive technical documentation</li>
+                  <li>Conducted knowledge transfer sessions</li>
+                  <li>Incorporated client feedback for final polish</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="cs-block">
+            <div class="cs-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
+            <h2>Results &amp; Impact</h2>
+            <p>The project was delivered on time within the 4-week window, meeting every specification outlined in the original requirements. The final solution exceeded the client's expectations in both accuracy and usability.</p>
+          </div>
+
+          <div class="cs-results-grid">
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              </div>
+              <h4>Accurate &amp; Reliable</h4>
+              <p>GPS positioning achieved 99.2% accuracy across all tested environments, including challenging indoor and urban scenarios.</p>
+            </div>
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <h4>Intuitive Interface</h4>
+              <p>Clean REST API and user-friendly data dashboard enabled the client's team to start monitoring devices immediately with no training.</p>
+            </div>
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h4>On-Time Delivery</h4>
+              <p>Every milestone hit within the agreed 4-week timeline, with weekly demos keeping the client informed at every stage.</p>
+            </div>
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </div>
+              <h4>Client Exceeded</h4>
+              <p>The client reported that the delivered solution surpassed their original specifications in both performance and code quality.</p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="cs-cta">
+            <h3>Have a similar project in mind?</h3>
+            <p>Whether it's IoT, embedded systems, or any hardware-software integration challenge — we'd love to help.</p>
+            <a href="index.html#contact" class="btn btn--primary btn--lg">Start a Conversation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo">
+            <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad2)"/>
+              <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+              <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+              <defs><linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#1a1a2e"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+            </svg>
+            <span class="header__logo-text">Projscope</span>
+          </a>
+          <p class="footer__tagline">Engineering software that scales. Architecture, development, prototyping, and AI solutions for modern businesses.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Solutions</h4>
+          <a href="index.html#services">Software Architecture</a>
+          <a href="index.html#services">Full-Stack Development</a>
+          <a href="index.html#services">Rapid Prototyping</a>
+          <a href="index.html#services">Cloud &amp; DevOps</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="index.html#process">Our Process</a>
+          <a href="index.html#products">Products</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="https://www.linkedin.com/company/projscope/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Projscope" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Projscope. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

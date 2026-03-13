@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Offline Kanban Dashboard — Projscope</title>
+  <meta name="description" content="An open-source, offline-first desktop Kanban board built with Angular and Electron. Drag-and-drop task management designed for developers and teams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header--scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+          <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+          <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+          <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#1a1a2e"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+        </svg>
+        <span class="header__logo-text">Projscope</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <a href="index.html#services" class="header__nav-link">Services</a>
+        <a href="index.html#products" class="header__nav-link">Products</a>
+        <a href="index.html#process" class="header__nav-link">Process</a>
+        <a href="index.html#contact" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color scheme">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <a href="index.html#contact" class="btn btn--primary header__cta">Get Started</a>
+      <button class="header__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="cs-hero">
+    <div class="cs-hero__bg">
+      <div class="cs-hero__glow"></div>
+    </div>
+    <div class="container">
+      <a href="index.html#products" class="cs-hero__back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Products
+      </a>
+      <div class="cs-hero__meta">
+        <span class="cs-hero__tag">Project Showcase</span>
+        <span class="cs-hero__tag cs-hero__tag--accent">Desktop App</span>
+        <span class="cs-hero__tag cs-hero__tag--accent">Open Source</span>
+      </div>
+      <h1 class="cs-hero__title">Offline Kanban Dashboard</h1>
+      <p class="cs-hero__subtitle">A clean, simple, and fully offline desktop task management tool built on Kanban methodology — born from the real need to manage diverse software projects without relying on cloud services.</p>
+
+      <div class="cs-hero__highlights">
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">2 Months</span>
+          <span class="cs-highlight__label">Development Time</span>
+        </div>
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">Open Source</span>
+          <span class="cs-highlight__label">Project Type</span>
+        </div>
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">Win / Linux</span>
+          <span class="cs-highlight__label">Platforms</span>
+        </div>
+        <div class="cs-highlight">
+          <span class="cs-highlight__value">Angular + Electron</span>
+          <span class="cs-highlight__label">Tech Stack</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-layout">
+        <aside class="cs-sidebar">
+          <div class="cs-info-card">
+            <h4>Project Details</h4>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Type</span>
+              <span class="cs-info-value">Open Source Product</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Duration</span>
+              <span class="cs-info-value">2 Months</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Platform</span>
+              <span class="cs-info-value">Windows, Linux</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">Architecture</span>
+              <span class="cs-info-value">Desktop (Electron)</span>
+            </div>
+            <div class="cs-info-row">
+              <span class="cs-info-label">License</span>
+              <span class="cs-info-value">Open Source</span>
+            </div>
+          </div>
+          <div class="cs-info-card">
+            <h4>Technologies</h4>
+            <div class="cs-tech-tags">
+              <span>Angular</span>
+              <span>Electron</span>
+              <span>TypeScript</span>
+              <span>HTML5 / CSS3</span>
+              <span>Node.js</span>
+              <span>Local Storage</span>
+              <span>Drag &amp; Drop API</span>
+              <span>Cross-Platform</span>
+            </div>
+          </div>
+          <div class="cs-info-card">
+            <h4>Skills Demonstrated</h4>
+            <div class="cs-skills">
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:95%"></div>
+                <span class="cs-skill__name">Angular Development</span>
+              </div>
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:90%"></div>
+                <span class="cs-skill__name">Electron / Desktop Apps</span>
+              </div>
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:88%"></div>
+                <span class="cs-skill__name">UX / Interaction Design</span>
+              </div>
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:85%"></div>
+                <span class="cs-skill__name">Offline-First Architecture</span>
+              </div>
+              <div class="cs-skill">
+                <div class="cs-skill__bar" style="--w:92%"></div>
+                <span class="cs-skill__name">Open Source Delivery</span>
+              </div>
+            </div>
+          </div>
+          <div class="cs-info-card">
+            <h4>Links</h4>
+            <div class="cs-links">
+              <a href="https://tasks.projscope.com" target="_blank" rel="noopener" class="cs-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Project Link
+              </a>
+              <a href="https://github.com/jviaches/projscope-tasks-source" target="_blank" rel="noopener" class="cs-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Open Source
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="cs-content">
+          <!-- The Context -->
+          <div class="cs-block">
+            <div class="cs-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <h2>The Context</h2>
+            <p>Managing multiple software projects simultaneously demands a tool that's fast, reliable, and always available — even without an internet connection. Existing cloud-based solutions introduced latency, required accounts, and added complexity that got in the way of simply organizing work.</p>
+            <p>We built this tool out of our own necessity: a streamlined, offline-first Kanban board that launches instantly, requires zero configuration, and stays out of the way while you focus on what matters.</p>
+            <div class="cs-callout">
+              <strong>Design Goal:</strong> Create a distraction-free, drag-and-drop task manager that works on any desktop OS without needing a network connection, login, or subscription.
+            </div>
+          </div>
+
+          <!-- Our Approach -->
+          <div class="cs-block">
+            <div class="cs-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h2>Our Approach</h2>
+            <p>We followed a lean, three-phase development process — moving from research to a deployed product in 2 months while maintaining high code quality and a focus on user experience.</p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="cs-timeline">
+            <div class="cs-timeline__item">
+              <div class="cs-timeline__marker"><span>1</span></div>
+              <div class="cs-timeline__content">
+                <div class="cs-timeline__header">
+                  <h3>Research &amp; Product Design</h3>
+                  <span class="cs-timeline__duration">Weeks 1 &ndash; 2</span>
+                </div>
+                <p>Conducted thorough market research to understand existing Kanban tools, user expectations, and gaps in the offline-first space. Defined core features, designed the interaction model, and planned the technical architecture.</p>
+                <ul>
+                  <li>Analyzed competing tools (Trello, Notion, Jira boards) for UX patterns</li>
+                  <li>Designed a minimal, keyboard-friendly interface</li>
+                  <li>Selected Angular + Electron for cross-platform desktop delivery</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs-timeline__item">
+              <div class="cs-timeline__marker"><span>2</span></div>
+              <div class="cs-timeline__content">
+                <div class="cs-timeline__header">
+                  <h3>Development &amp; Iteration</h3>
+                  <span class="cs-timeline__duration">Weeks 3 &ndash; 6</span>
+                </div>
+                <p>Built the application using agile sprints, leveraging Angular's component architecture and Electron's native desktop capabilities. Implemented the core Kanban board with drag-and-drop, local data persistence, and cross-platform builds.</p>
+                <ul>
+                  <li>Implemented intuitive drag-and-drop between columns</li>
+                  <li>Built local storage layer for fully offline data persistence</li>
+                  <li>Created task creation, editing, and organization workflows</li>
+                  <li>Developed cross-platform build pipeline for Windows and Linux</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs-timeline__item">
+              <div class="cs-timeline__marker"><span>3</span></div>
+              <div class="cs-timeline__content">
+                <div class="cs-timeline__header">
+                  <h3>Deployment &amp; Open Source Release</h3>
+                  <span class="cs-timeline__duration">Weeks 7 &ndash; 8</span>
+                </div>
+                <p>Polished the application, optimized performance, and prepared for public release. Published the app along with complete source code on GitHub, and deployed a live web demo for instant access.</p>
+                <ul>
+                  <li>Published desktop builds and a live web version at tasks.projscope.com</li>
+                  <li>Released full source code on GitHub for community contribution</li>
+                  <li>Documented setup, architecture, and contribution guidelines</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="cs-block">
+            <div class="cs-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
+            <h2>Key Features</h2>
+            <p>The application delivers a focused, no-frills task management experience designed for speed and simplicity.</p>
+          </div>
+
+          <div class="cs-results-grid">
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              </div>
+              <h4>Kanban Boards</h4>
+              <p>Visual columns for organizing tasks into stages — To Do, In Progress, Done, or any custom workflow that fits your process.</p>
+            </div>
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 9l4 4L19 3"/><path d="M5 19h14"/></svg>
+              </div>
+              <h4>Drag &amp; Drop</h4>
+              <p>Intuitive drag-and-drop interface for moving tasks between columns, reordering priorities, and managing workflow with zero friction.</p>
+            </div>
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h4>100% Offline</h4>
+              <p>All data stored locally on your machine. No accounts, no subscriptions, no cloud dependency. Your data never leaves your computer.</p>
+            </div>
+            <div class="cs-result-card">
+              <div class="cs-result-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <h4>Cross-Platform</h4>
+              <p>Runs natively on Windows and Linux via Electron, with a web version available for instant browser-based access.</p>
+            </div>
+          </div>
+
+          <!-- Outcome -->
+          <div class="cs-block">
+            <div class="cs-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h2>Outcome &amp; Impact</h2>
+            <p>What started as an internal productivity tool evolved into a fully open-source product that demonstrates our ability to ship polished desktop applications. The project showcases end-to-end product development — from identifying a real need through design, development, and public release — all within a focused 2-month timeline.</p>
+            <p>The tool remains actively used for managing our own project workflows and is available to the community as both a desktop app and a live web demo.</p>
+          </div>
+
+          <!-- CTA -->
+          <div class="cs-cta">
+            <h3>Need a custom desktop or offline-first app?</h3>
+            <p>We build cross-platform applications with Angular, Electron, and modern web technologies. Let's talk about your project.</p>
+            <a href="index.html#contact" class="btn btn--primary btn--lg">Start a Conversation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo">
+            <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad2)"/>
+              <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+              <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+              <defs><linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#1a1a2e"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+            </svg>
+            <span class="header__logo-text">Projscope</span>
+          </a>
+          <p class="footer__tagline">Engineering software that scales. Architecture, development, prototyping, and AI solutions for modern businesses.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Solutions</h4>
+          <a href="index.html#services">Software Architecture</a>
+          <a href="index.html#services">Full-Stack Development</a>
+          <a href="index.html#services">Rapid Prototyping</a>
+          <a href="index.html#services">Cloud &amp; DevOps</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="index.html#process">Our Process</a>
+          <a href="index.html#products">Products</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="https://www.linkedin.com/company/projscope/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Projscope" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Projscope. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

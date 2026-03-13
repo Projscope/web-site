@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projscope — Software Architecture, Development &amp; AI Solutions</title>
+  <meta name="description" content="Projscope delivers expert software architecture, full-stack development, rapid prototyping, and AI-powered solutions for modern businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+          <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+          <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
+              <stop stop-color="#1a1a2e"/>
+              <stop offset="1" stop-color="#0d9488"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="header__logo-text">Projscope</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <a href="#services" class="header__nav-link">Services</a>
+        <a href="#products" class="header__nav-link">Products</a>
+        <a href="#ai" class="header__nav-link">AI Solutions</a>
+        <a href="#process" class="header__nav-link">Process</a>
+        <a href="#contact" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color scheme">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--primary header__cta">Get Started</a>
+      <button class="header__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">Consulting &middot; Architecture &middot; Development</p>
+      <h1 class="hero__title">
+        Expert IT Consulting &amp;<br>
+        <span class="hero__title--accent">Software Development.</span>
+      </h1>
+      <p class="hero__subtitle">
+        From concept to production — expert software architecture, rapid prototyping,
+        full-stack development, and AI-powered solutions that drive real business outcomes.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">Start Your Project</a>
+        <a href="#services" class="btn btn--outline btn--lg">Explore Services</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="150">0</span><span class="hero__stat-suffix">+</span>
+          <span class="hero__stat-label">Projects Delivered</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="15">0</span><span class="hero__stat-suffix">+</span>
+          <span class="hero__stat-label">Years Experience</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="98">0</span><span class="hero__stat-suffix">%</span>
+          <span class="hero__stat-label">Client Satisfaction</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="40">0</span><span class="hero__stat-suffix">+</span>
+          <span class="hero__stat-label">Enterprise Clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Services &amp; Expertise</h2>
+        <p class="section-desc">End-to-end software services & consulting from strategic architecture to production deployment, powered by modern technologies and AI.</p>
+      </div>
+      <div class="services__grid">
+        <!-- Service 1 -->
+        <div class="service-card" data-animate>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2"/><path d="M4 16H44" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="12" r="1.5" fill="currentColor"/><circle cx="15" cy="12" r="1.5" fill="currentColor"/><circle cx="20" cy="12" r="1.5" fill="currentColor"/><path d="M14 24L20 28L14 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 32H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Software Architecture</h3>
+          <p class="service-card__desc">Scalable system design with microservices, event-driven patterns, and cloud-native architectures. We design systems that grow with your business.</p>
+          <ul class="service-card__tags">
+            <li>Microservices</li>
+            <li>Cloud-Native</li>
+            <li>Event-Driven</li>
+            <li>Legacy</li>
+            <li>Modern</li>
+          </ul>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card" data-animate>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L44 14V34L24 44L4 34V14L24 4Z" stroke="currentColor" stroke-width="2"/><path d="M24 4V44" stroke="currentColor" stroke-width="2"/><path d="M4 14L24 24L44 14" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3 class="service-card__title">Full-Stack Development</h3>
+          <p class="service-card__desc">Modern web and mobile applications built with React, .NET, Node.js, and cloud platforms. Robust, tested, and production-ready code.</p>
+          <ul class="service-card__tags">
+            <li>React</li>
+            <li>.NET</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card" data-animate>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 38V18L24 8L40 18V38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 38V26H32V38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="18" r="3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3 class="service-card__title">Rapid Prototyping</h3>
+          <p class="service-card__desc">From idea to working prototype fast. Validate concepts, reduce risk, and accelerate time-to-market with our proof-of-concept expertise.</p>
+          <ul class="service-card__tags">
+            <li>MVP</li>
+            <li>Proof of Concept</li>
+            <li>Validation</li>
+          </ul>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card" data-animate>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 14l4 4M30 14l-4 4M14 34l4-4M30 34l-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3 class="service-card__title">IT Consulting</h3>
+          <p class="service-card__desc">Strategic technology advisory guiding businesses through technology decisions, system modernization, and digital transformation with proven results.</p>
+          <ul class="service-card__tags">
+            <li>Strategy</li>
+            <li>Digital Transformation</li>
+            <li>Advisory</li>
+          </ul>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-card" data-animate>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M40 24C40 32.8366 32.8366 40 24 40C15.1634 40 8 32.8366 8 24C8 15.1634 15.1634 8 24 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M32 8H40V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 20L40 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 24H28M24 20V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Cloud &amp; DevOps</h3>
+          <p class="service-card__desc">Azure, AWS, and hybrid cloud infrastructure. CI/CD pipelines, containerization, and infrastructure-as-code for reliable deployments.</p>
+          <ul class="service-card__tags">
+            <li>Azure</li>
+            <li>AWS</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-card" data-animate>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 6V2M32 6V2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 18H32M16 26H28M16 34H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="36" cy="36" r="8" fill="var(--color-bg)" stroke="currentColor" stroke-width="2"/><path d="M33 36L35 38L39 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="service-card__title">IT Consulting</h3>
+          <p class="service-card__desc">Strategic technology advisory for digital transformation. We help organizations make informed decisions about their technology investments.</p>
+          <ul class="service-card__tags">
+            <li>Strategy</li>
+            <li>Digital Transformation</li>
+            <li>Advisory</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Products</span>
+        <h2 class="section-title">Built &amp; Battle-Tested</h2>
+        <p class="section-desc">Products we've designed, built, and shipped — demonstrating our capabilities across diverse domains.</p>
+      </div>
+      <div class="products__grid">
+        <a href="project-masonry.html" class="product-card product-card--featured product-card--link" data-animate>
+          <div class="product-card__visual">
+            <div class="product-card__visual-bg">
+              <svg viewBox="0 0 400 240" fill="none">
+                <rect width="400" height="240" fill="url(#p1-bg)"/>
+                <!-- Kanban board illustration -->
+                <rect x="30" y="24" width="100" height="14" rx="4" fill="rgba(255,255,255,0.25)"/>
+                <rect x="150" y="24" width="100" height="14" rx="4" fill="rgba(255,255,255,0.25)"/>
+                <rect x="270" y="24" width="100" height="14" rx="4" fill="rgba(255,255,255,0.25)"/>
+                <!-- Column 1: To Do -->
+                <rect x="30" y="48" width="100" height="50" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)"/>
+                <rect x="38" y="56" width="60" height="5" rx="2.5" fill="rgba(255,255,255,0.3)"/>
+                <rect x="38" y="66" width="40" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+                <rect x="38" y="78" width="20" height="12" rx="3" fill="rgba(255,255,255,0.2)"/>
+                <rect x="30" y="106" width="100" height="50" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)"/>
+                <rect x="38" y="114" width="70" height="5" rx="2.5" fill="rgba(255,255,255,0.3)"/>
+                <rect x="38" y="124" width="50" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+                <rect x="30" y="164" width="100" height="50" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
+                <!-- Column 2: In Progress -->
+                <rect x="150" y="48" width="100" height="50" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)"/>
+                <rect x="158" y="56" width="55" height="5" rx="2.5" fill="rgba(255,255,255,0.3)"/>
+                <rect x="158" y="66" width="70" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+                <rect x="158" y="78" width="24" height="12" rx="3" fill="rgba(99,200,255,0.3)"/>
+                <rect x="150" y="106" width="100" height="50" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
+                <!-- Column 3: Done -->
+                <rect x="270" y="48" width="100" height="50" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)"/>
+                <rect x="278" y="56" width="65" height="5" rx="2.5" fill="rgba(255,255,255,0.3)"/>
+                <rect x="278" y="66" width="45" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+                <rect x="278" y="78" width="20" height="12" rx="3" fill="rgba(80,255,160,0.25)"/>
+                <!-- Drag arrow -->
+                <path d="M130 73 L150 73" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+                <path d="M147 69 L153 73 L147 77" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" fill="none"/>
+                <defs><linearGradient id="p1-bg" x1="0" y1="0" x2="400" y2="240"><stop stop-color="#1a1a2e"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+              </svg>
+            </div>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Desktop App &middot; Open Source</span>
+            <h3 class="product-card__title">Offline Kanban Dashboard</h3>
+            <p class="product-card__desc">A clean, offline-first desktop task management tool built on Kanban methodology. Drag-and-drop workflow with intuitive boards for organizing projects without an internet connection.</p>
+            <span class="product-card__cta">View Project &rarr;</span>
+            <div class="product-card__tech">
+              <span>Angular</span><span>Electron</span><span>TypeScript</span><span>Desktop</span>
+            </div>
+          </div>
+        </a>
+        <a href="case-study-programmable-hardware.html" class="product-card product-card--link" data-animate>
+          <div class="product-card__visual">
+            <div class="product-card__visual-bg product-card__visual-bg--2">
+              <svg viewBox="0 0 400 200" fill="none">
+                <rect width="400" height="200" fill="url(#p2-bg)"/>
+                <rect x="60" y="40" width="280" height="120" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)"/>
+                <path d="M80 120L120 90L160 110L200 70L240 95L280 60L320 80" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none"/>
+                <circle cx="120" cy="90" r="4" fill="white"/>
+                <circle cx="200" cy="70" r="4" fill="white"/>
+                <circle cx="320" cy="80" r="4" fill="white"/>
+                <defs><linearGradient id="p2-bg" x1="0" y1="0" x2="400" y2="200"><stop stop-color="#059669"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+              </svg>
+            </div>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__tag">IoT Platform</span>
+            <h3 class="product-card__title">Smart Device Monitor</h3>
+            <p class="product-card__desc">Real-time IoT monitoring dashboard with programmable hardware integration, GPS tracking, and predictive analytics.</p>
+            <span class="product-card__cta">View Case Study &rarr;</span>
+            <div class="product-card__tech">
+              <span>C++</span><span>Python</span><span>MQTT</span><span>React</span>
+            </div>
+          </div>
+        </a>
+        <a href="project-music-player.html" class="product-card product-card--link" data-animate>
+          <div class="product-card__visual">
+            <div class="product-card__visual-bg product-card__visual-bg--3">
+              <img src="assets/player-mini.png" alt="Projscope Music Player" style="width:100%;height:100%;padding:46px;margin-bottom: 12px;">
+            </div>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Desktop App · Open Source</span>
+            <h3 class="product-card__title">Projscope Music Player</h3>
+            <p class="product-card__desc">Cross-platform desktop MP3 player inspired by Winamp, blending nostalgic design with modern functionality for a seamless listening experience.</p>
+            <span class="product-card__cta">View Project &rarr;</span>
+            <div class="product-card__tech">
+              <span>Angular</span><span>Electron</span><span>TypeScript</span><span>SCSS</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How We Work</span>
+        <h2 class="section-title">Our Process</h2>
+        <p class="section-desc">A proven methodology that transforms ideas into production-grade software, with transparency at every step.</p>
+      </div>
+      <div class="process__timeline">
+        <div class="process__step" data-animate>
+          <div class="process__step-number">01</div>
+          <div class="process__step-content">
+            <h3>Discovery &amp; Strategy</h3>
+            <p>Deep-dive into your requirements, business goals, and technical landscape. We identify risks, define scope, and craft a strategic roadmap.</p>
+          </div>
+        </div>
+        <div class="process__step" data-animate>
+          <div class="process__step-number">02</div>
+          <div class="process__step-content">
+            <h3>Architecture &amp; Design</h3>
+            <p>System architecture, technology selection, and UX design. We create detailed blueprints and interactive prototypes before writing a line of code.</p>
+          </div>
+        </div>
+        <div class="process__step" data-animate>
+          <div class="process__step-number">03</div>
+          <div class="process__step-content">
+            <h3>Development &amp; Testing</h3>
+            <p>Agile sprints with continuous integration, automated testing, and regular demos. You see progress every week and can steer direction in real time.</p>
+          </div>
+        </div>
+        <div class="process__step" data-animate>
+          <div class="process__step-number">04</div>
+          <div class="process__step-content">
+            <h3>Deployment &amp; Scale</h3>
+            <p>Production deployment with monitoring, performance optimization, and ongoing support. We ensure your software is reliable, secure, and ready to scale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="tech-stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technology</span>
+        <h2 class="section-title">Our Tech Stack</h2>
+      </div>
+      <div class="tech-stack__grid">
+        <div class="tech-item" data-animate><span class="tech-item__name">.NET / C#</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">React</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">TypeScript</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">Node.js</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">Python</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">Azure</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">AWS</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">Docker</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">PostgreSQL</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">SQL</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">Unity / C#</span></div>
+        <div class="tech-item" data-animate><span class="tech-item__name">Others...</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__info">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something<br>Great Together</h2>
+          <p class="contact__desc">Ready to start your project? Get a free consultation and detailed project quote. We typically respond within 24 hours.</p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <strong>Phone</strong>
+                <span>+1 204-797-1681</span>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              <div>
+                <strong>Email</strong>
+                <span>support@projscope.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact__process">
+            <h4>Our Quotation Process</h4>
+            <div class="contact__process-step">
+              <span>1</span>
+              <p>Initial consultation — share your vision and requirements</p>
+            </div>
+            <div class="contact__process-step">
+              <span>2</span>
+              <p>Detailed analysis — we assess scope, resources, and timeline</p>
+            </div>
+            <div class="contact__process-step">
+              <span>3</span>
+              <p>Transparent quote — comprehensive proposal with clear pricing</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your Company">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group form-group--full">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your project, goals, and timeline..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="header__logo">
+            <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad2)"/>
+              <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+              <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+              <defs><linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#1a1a2e"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+            </svg>
+            <span class="header__logo-text">Projscope</span>
+          </a>
+          <p class="footer__tagline">Engineering software that scales. Architecture, development, prototyping, and AI solutions for modern businesses.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Solutions</h4>
+          <a href="#services">Software Architecture</a>
+          <a href="#services">Full-Stack Development</a>
+          <a href="#services">Rapid Prototyping</a>
+          <a href="#services">Cloud &amp; DevOps</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#process">Our Process</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="https://www.linkedin.com/company/projscope/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Projscope" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Projscope. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
