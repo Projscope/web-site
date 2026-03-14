@@ -1,0 +1,79 @@
+export interface CaseStudyTag {
+  label: string;
+  accent: boolean;
+}
+
+export interface Highlight {
+  value: string;
+  label: string;
+}
+
+export interface SidebarDetail {
+  label: string;
+  value: string;
+}
+
+export interface SidebarLink {
+  label: string;
+  url: string;
+  type: 'tag' | 'link';
+  icon?: string;
+}
+
+export interface Skill {
+  name: string;
+  width: string;
+}
+
+export interface ContentBlock {
+  icon: string;
+  title: string;
+  paragraphs: string[];
+  callout?: string;
+}
+
+export interface TimelineItem {
+  number: number;
+  title: string;
+  duration: string;
+  description: string;
+  bullets?: string[];
+}
+
+export interface ResultCard {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface CaseStudyData {
+  meta: {
+    title: string;
+    subtitle: string;
+    tags: CaseStudyTag[];
+    backLabel: string;
+    backTo: string;
+  };
+  highlights: Highlight[];
+  sidebar: {
+    details: SidebarDetail[];
+    technologies: string[];
+    skills: Skill[];
+    links: SidebarLink[];
+  };
+  blocks: ContentBlock[];
+  timeline: TimelineItem[];
+  resultsIntro: {
+    icon: string;
+    title: string;
+    paragraphs?: string[];
+  };
+  results: ResultCard[];
+  outcomeBlock?: ContentBlock;
+  cta: {
+    title: string;
+    description: string;
+    buttonText: string;
+    buttonLink: string;
+  };
+}
