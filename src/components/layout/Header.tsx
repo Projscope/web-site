@@ -46,18 +46,7 @@ export default function Header() {
     <header className={`header${scrolled || !isHome ? ' header--scrolled' : ''}`} id="header">
       <div className="container header__inner">
         <Link to="/" className="header__logo" onClick={closeMenu}>
-          <svg className="header__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
-            <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9" />
-            <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6" />
-            <defs>
-              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
-                <stop stopColor="#1a1a2e" />
-                <stop offset="1" stopColor="#0d9488" />
-              </linearGradient>
-            </defs>
-          </svg>
-          <span className="header__logo-text">Projscope</span>
+          <img className="header__logo-img" src="/logo.svg" alt="Projscope" />
         </Link>
         <nav className={`header__nav${menuOpen ? ' is-open' : ''}`} id="nav">
           {navLinks.map(link => (

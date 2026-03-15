@@ -23,13 +23,7 @@ export default function Footer() {
         <div className="footer__inner">
           <div className="footer__brand">
             <Link to="/" className="header__logo">
-              <svg className="header__logo-icon" viewBox="0 0 32 32" fill="none">
-                <rect width="32" height="32" rx="8" fill="url(#logo-grad2)" />
-                <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9" />
-                <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6" />
-                <defs><linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32"><stop stopColor="#1a1a2e" /><stop offset="1" stopColor="#0d9488" /></linearGradient></defs>
-              </svg>
-              <span className="header__logo-text">Projscope</span>
+              <img className="header__logo-img" src="/logo.svg" alt="Projscope" />
             </Link>
             <p className="footer__tagline">Engineering software that scales. Architecture, development, prototyping, and AI solutions for modern businesses.</p>
           </div>
