@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 export function useTheme() {
   const [theme, setThemeState] = useState<'light' | 'dark'>(() => {
-    return (localStorage.getItem('projscope-theme') as 'light' | 'dark') || 'light';
+    return (localStorage.getItem('projscope-theme') as 'light' | 'dark') || 'dark';
   });
 
   useEffect(() => {

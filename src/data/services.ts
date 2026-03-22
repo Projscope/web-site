@@ -37,9 +37,9 @@ export const services: Service[] = [
     tags: ['Azure', 'AWS', 'Docker'],
   },
   {
-    icon: `<svg viewBox="0 0 48 48" fill="none"><rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 6V2M32 6V2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 18H32M16 26H28M16 34H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="36" cy="36" r="8" fill="var(--color-bg)" stroke="currentColor" stroke-width="2"/><path d="M33 36L35 38L39 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
-    title: 'IT Consulting',
-    description: 'Strategic technology advisory for digital transformation. We help organizations make informed decisions about their technology investments.',
-    tags: ['Strategy', 'Digital Transformation', 'Advisory'],
+    icon: `<svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M4 16H44" stroke="currentColor" stroke-width="2"/><rect x="10" y="20" width="12" height="8" rx="1" stroke="currentColor" stroke-width="2"/><path d="M28 22H38M28 26H34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 36L14 42M32 36L34 42M10 42H38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`,
+    title: 'Web Design & SEO',
+    description: 'Visually compelling, conversion-focused websites paired with data-driven SEO strategies to boost your online presence and organic traffic.',
+    tags: ['UI/UX', 'SEO', 'Landing Pages', 'Performance'],
   },
 ];
