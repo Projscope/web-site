@@ -39,6 +39,7 @@ export default function Footer() {
             <a href="#process" onClick={handleNavClick('#process')}>Our Process</a>
             <a href="#insights" onClick={handleNavClick('#insights')}>Insights</a>
             <a href="#contact" onClick={handleNavClick('#contact')}>Contact</a>
+            <Link to="/projects">Projects</Link>
           </div>
           <div className="footer__col">
             <h4>Connect</h4>

@@ -42,6 +42,7 @@ export default function Header() {
     { hash: '#contact', label: 'Contact' },
   ];
 
+
   return (
     <header className={`header${scrolled || !isHome ? ' header--scrolled' : ''}`} id="header">
       <div className="container header__inner">
@@ -59,6 +60,9 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <Link to="/projects" className="header__nav-link" onClick={closeMenu}>
+            Projects
+          </Link>
         </nav>
         <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle color scheme">
           <svg className="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>

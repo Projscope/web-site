@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import MusicPlayerPage from './pages/MusicPlayerPage';
 import MasonryPage from './pages/MasonryPage';
 import HardwarePage from './pages/HardwarePage';
+import OpenSourcePage from './pages/OpenSourcePage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/project/music-player" element={<MusicPlayerPage />} />
         <Route path="/project/masonry" element={<MasonryPage />} />
         <Route path="/case-study/programmable-hardware" element={<HardwarePage />} />
+        <Route path="/projects" element={<OpenSourcePage />} />
       </Routes>
       <Footer />
     </>
