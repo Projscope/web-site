@@ -4,6 +4,12 @@ const GithubIcon = () => (
   </svg>
 );
 
+const ExternalLinkIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
+    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+  </svg>
+);
+
 const projects = [
   {
     name: 'Projscope Music Player',
@@ -20,6 +26,15 @@ const projects = [
     tags: ['Open Source', 'Kanban', 'Task Management', 'Offline', 'Productivity'],
     url: 'https://github.com/jviaches/projscope-tasks-source',
     image: 'https://raw.githubusercontent.com/jviaches/projscope-tasks-source/main/images/dashboard.PNG',
+  },
+  {
+    name: 'myhinge',
+    description: 'Goal-focused daily habit app built around one simple question: "What one thing, if done today, makes your day?" Pick one goal, add two supporting tasks, and track your streaks with a 16-week heatmap.',
+    language: 'TypeScript',
+    tags: ['PWA', 'Habit Tracking', 'Productivity', 'Offline', 'Push Notifications', 'Analytics'],
+    url: 'https://my-hinge.netlify.app/',
+    image: '',
+    isLive: true,
   },
 ];
 
@@ -39,11 +54,17 @@ export default function OpenSourcePage() {
             {projects.map(project => (
               <li key={project.url} className="oss-item">
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="oss-item__image-link">
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="oss-item__image"
-                  />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      className="oss-item__image"
+                    />
+                  ) : (
+                    <div className="oss-item__image oss-item__image--placeholder">
+                      <span>{project.name}</span>
+                    </div>
+                  )}
                 </a>
                 <div className="oss-item__body">
                   <h2 className="oss-item__name">{project.name}</h2>
@@ -60,8 +81,8 @@ export default function OpenSourcePage() {
                     {project.language}
                   </span>
                   <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn--secondary oss-item__btn">
-                    <GithubIcon />
-                    View on GitHub
+                    {(project as { isLive?: boolean }).isLive ? <ExternalLinkIcon /> : <GithubIcon />}
+                    {(project as { isLive?: boolean }).isLive ? 'View Live App' : 'View on GitHub'}
                   </a>
                 </div>
               </li>
