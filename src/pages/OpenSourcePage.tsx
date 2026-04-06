@@ -30,8 +30,8 @@ const projects = [
   {
     name: 'myhinge',
     description: 'Goal-focused daily habit app built around one simple question: "What one thing, if done today, makes your day?" Pick one goal, add two supporting tasks, and track your streaks with a 16-week heatmap.',
-    language: 'TypeScript',
-    tags: ['PWA', 'Habit Tracking', 'Productivity', 'Offline', 'Push Notifications', 'Analytics'],
+    language: 'Next.js',
+    tags: ['React', 'PWA', 'Supabase', 'Habit Tracking', 'Productivity', 'Offline'],
     url: 'https://my-hinge.netlify.app/',
     image: '',
     isLive: true,
