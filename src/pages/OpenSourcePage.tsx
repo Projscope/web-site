@@ -13,7 +13,13 @@ const ExternalLinkIcon = () => (
 const projects = [
   {
     name: 'Projscope Music Player',
-    description: 'Cross-platform offline media player inspired by Winamp. A free desktop tool built with Electron and Angular for playing MP3s and managing your local music library.',
+    description: 'A polished cross-platform desktop media player that demonstrates our expertise in Electron-based application development. Built as a modern alternative to legacy players like Winamp, it delivers a native desktop experience on Windows, macOS, and Linux from a single TypeScript codebase.',
+    highlights: [
+      'Cross-platform desktop app — single codebase, three operating systems',
+      'Offline-first architecture with zero cloud dependency',
+      'Custom audio engine with playlist management and library indexing',
+      'Responsive UI built with Angular, showcasing component-driven design',
+    ],
     language: 'TypeScript',
     tags: ['Open Source', 'Electron', 'Angular', 'Cross-Platform', 'MP3', 'Desktop'],
     url: 'https://github.com/jviaches/projscope-music-player',
@@ -21,7 +27,13 @@ const projects = [
   },
   {
     name: 'Projscope Tasks',
-    description: 'Free, offline, clean and simple task management tool built with the Kanban methodology in mind. Manage your work visually with drag-and-drop boards and zero cloud dependency.',
+    description: 'A lightweight Kanban-style task management tool designed for teams and individuals who need visual workflow organization without the overhead of cloud subscriptions. This project showcases our ability to build intuitive, production-ready productivity tools from the ground up.',
+    highlights: [
+      'Drag-and-drop Kanban boards with smooth animations',
+      'Fully offline — all data stays on the user\'s machine',
+      'Clean, distraction-free interface focused on usability',
+      'Built to demonstrate rapid prototyping and MVP delivery',
+    ],
     language: 'TypeScript',
     tags: ['Open Source', 'Kanban', 'Task Management', 'Offline', 'Productivity'],
     url: 'https://github.com/jviaches/projscope-tasks-source',
@@ -29,12 +41,35 @@ const projects = [
   },
   {
     name: 'myhinge',
-    description: 'Goal-focused daily habit app built around one simple question: "What one thing, if done today, makes your day?" Pick one goal, add two supporting tasks, and track your streaks with a 16-week heatmap.',
+    description: 'A goal-focused daily habit tracker built around one powerful question: "What one thing, if done today, makes your day?" This progressive web app showcases modern full-stack development with real-time data sync, offline support, and a mobile-first design that works seamlessly across all devices.',
+    highlights: [
+      'PWA with offline support — installable on any device, no app store needed',
+      'Real-time data sync powered by Supabase (PostgreSQL + Auth)',
+      '16-week streak heatmap for visual progress tracking',
+      'Server-side rendering with Next.js for fast load times and SEO',
+    ],
     language: 'Next.js',
     tags: ['React', 'PWA', 'Supabase', 'Habit Tracking', 'Productivity', 'Offline'],
     url: 'https://my-hinge.netlify.app/',
-    image: '',
+    image: 'https://myhinge.app/og-image.png',
     isLive: true,
+    isLogo: true,
+  },
+  {
+    name: 'CxTrack',
+    description: 'An AI automation platform helping businesses streamline operations through intelligent voice agents, custom CRMs, and process audits. As CTO, I architected the technical foundation — from AI-powered phone systems that capture leads 24/7 to custom-built CRM solutions tailored to each client\'s workflow.',
+    highlights: [
+      'AI Voice Agents that answer calls, qualify leads, and book meetings automatically',
+      'Custom CRM systems built around real business workflows, not templates',
+      'AI Audits that map processes and uncover hidden revenue opportunities',
+      'Proven results: 3.2x average ROI in the first year for clients',
+    ],
+    language: 'AI / Automation',
+    tags: ['AI Voice', 'CRM', 'Automation', 'SaaS', 'Lead Generation', 'Business Intelligence'],
+    url: 'https://cxtrack.com/',
+    image: 'https://cxtrack.com/Logo/CxTrack_Gold_Logo.png',
+    isLive: true,
+    isLogo: true,
   },
 ];
 
@@ -58,7 +93,7 @@ export default function OpenSourcePage() {
                     <img
                       src={project.image}
                       alt={project.name}
-                      className="oss-item__image"
+                      className={`oss-item__image${(project as { isLogo?: boolean }).isLogo ? ' oss-item__image--logo' : ''}`}
                     />
                   ) : (
                     <div className="oss-item__image oss-item__image--placeholder">
@@ -69,6 +104,13 @@ export default function OpenSourcePage() {
                 <div className="oss-item__body">
                   <h2 className="oss-item__name">{project.name}</h2>
                   <p className="oss-item__desc">{project.description}</p>
+                  {project.highlights && (
+                    <ul className="oss-item__highlights">
+                      {project.highlights.map(h => (
+                        <li key={h}>{h}</li>
+                      ))}
+                    </ul>
+                  )}
                   <ul className="service-card__tags oss-item__tags">
                     {project.tags.map(tag => (
                       <li key={tag}>{tag}</li>
