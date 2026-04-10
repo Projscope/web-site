@@ -1487,7 +1487,9 @@ ul, ol { list-style: none; }
 }
 .oss-card__body {
   flex: 1;
-  padding: 24px 28px 0;
+  padding: 24px 28px 20px;
+  display: flex;
+  flex-direction: column;
 }
 .oss-card__name {
   font-size: 1.2rem;
@@ -1527,7 +1529,9 @@ ul, ol { list-style: none; }
   background: var(--color-accent);
 }
 .oss-card__tags {
+  margin-top: auto;
   margin-bottom: 0;
+  padding-top: 16px;
 }
 .oss-card__footer {
   display: flex;
