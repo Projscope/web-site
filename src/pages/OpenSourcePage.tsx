@@ -10,66 +10,78 @@ const ExternalLinkIcon = () => (
   </svg>
 );
 
-const projects = [
+const categories = [
   {
-    name: 'Projscope Music Player',
-    description: 'A polished cross-platform desktop media player that demonstrates our expertise in Electron-based application development. Built as a modern alternative to legacy players like Winamp, it delivers a native desktop experience on Windows, macOS, and Linux from a single TypeScript codebase.',
-    highlights: [
-      'Cross-platform desktop app — single codebase, three operating systems',
-      'Offline-first architecture with zero cloud dependency',
-      'Custom audio engine with playlist management and library indexing',
-      'Responsive UI built with Angular, showcasing component-driven design',
+    title: 'Open Source',
+    subtitle: 'Free tools we\'ve built and released to the community. Open to use, open to contribute.',
+    projects: [
+      {
+        name: 'Projscope Music Player',
+        description: 'A polished cross-platform desktop media player that demonstrates our expertise in Electron-based application development. Built as a modern alternative to legacy players like Winamp, it delivers a native desktop experience on Windows, macOS, and Linux from a single TypeScript codebase.',
+        highlights: [
+          'Cross-platform desktop app — single codebase, three operating systems',
+          'Offline-first architecture with zero cloud dependency',
+          'Custom audio engine with playlist management and library indexing',
+          'Responsive UI built with Angular, showcasing component-driven design',
+        ],
+        language: 'TypeScript',
+        tags: ['Electron', 'Angular', 'Cross-Platform', 'MP3', 'Desktop'],
+        url: 'https://github.com/jviaches/projscope-music-player',
+        image: 'https://raw.githubusercontent.com/jviaches/projscope-music-player/main/images/player.PNG',
+      },
+      {
+        name: 'Projscope Tasks',
+        description: 'A lightweight Kanban-style task management tool designed for teams and individuals who need visual workflow organization without the overhead of cloud subscriptions. This project showcases our ability to build intuitive, production-ready productivity tools from the ground up.',
+        highlights: [
+          'Drag-and-drop Kanban boards with smooth animations',
+          'Fully offline — all data stays on the user\'s machine',
+          'Clean, distraction-free interface focused on usability',
+          'Built to demonstrate rapid prototyping and MVP delivery',
+        ],
+        language: 'TypeScript',
+        tags: ['Kanban', 'Task Management', 'Offline', 'Productivity'],
+        url: 'https://github.com/jviaches/projscope-tasks-source',
+        image: 'https://raw.githubusercontent.com/jviaches/projscope-tasks-source/main/images/dashboard.PNG',
+      },
     ],
-    language: 'TypeScript',
-    tags: ['Open Source', 'Electron', 'Angular', 'Cross-Platform', 'MP3', 'Desktop'],
-    url: 'https://github.com/jviaches/projscope-music-player',
-    image: 'https://raw.githubusercontent.com/jviaches/projscope-music-player/main/images/player.PNG',
   },
   {
-    name: 'Projscope Tasks',
-    description: 'A lightweight Kanban-style task management tool designed for teams and individuals who need visual workflow organization without the overhead of cloud subscriptions. This project showcases our ability to build intuitive, production-ready productivity tools from the ground up.',
-    highlights: [
-      'Drag-and-drop Kanban boards with smooth animations',
-      'Fully offline — all data stays on the user\'s machine',
-      'Clean, distraction-free interface focused on usability',
-      'Built to demonstrate rapid prototyping and MVP delivery',
+    title: 'SaaS',
+    subtitle: 'Live products and platforms we\'ve designed, built, and shipped to real users.',
+    projects: [
+      {
+        name: 'myhinge',
+        description: 'A goal-focused daily habit tracker built around one powerful question: "What one thing, if done today, makes your day?" This progressive web app showcases modern full-stack development with real-time data sync, offline support, and a mobile-first design that works seamlessly across all devices.',
+        highlights: [
+          'PWA with offline support — installable on any device, no app store needed',
+          'Real-time data sync powered by Supabase (PostgreSQL + Auth)',
+          '16-week streak heatmap for visual progress tracking',
+          'Server-side rendering with Next.js for fast load times and SEO',
+        ],
+        language: 'Next.js',
+        tags: ['React', 'PWA', 'Supabase', 'Habit Tracking', 'Productivity'],
+        url: 'https://my-hinge.netlify.app/',
+        image: 'https://myhinge.app/og-image.png',
+        isLive: true,
+        isLogo: true,
+      },
+      {
+        name: 'CxTrack',
+        description: 'An AI automation platform helping businesses streamline operations through intelligent voice agents, custom CRMs, and process audits. As CTO, I architected the technical foundation — from AI-powered phone systems that capture leads 24/7 to custom-built CRM solutions tailored to each client\'s workflow.',
+        highlights: [
+          'AI Voice Agents that answer calls, qualify leads, and book meetings automatically',
+          'Custom CRM systems built around real business workflows, not templates',
+          'AI Audits that map processes and uncover hidden revenue opportunities',
+          'Proven results: 3.2x average ROI in the first year for clients',
+        ],
+        language: 'AI / Automation',
+        tags: ['AI Voice', 'CRM', 'Automation', 'SaaS', 'Lead Generation'],
+        url: 'https://cxtrack.com/',
+        image: 'https://cxtrack.com/Logo/CxTrack_Gold_Logo.png',
+        isLive: true,
+        isLogo: true,
+      },
     ],
-    language: 'TypeScript',
-    tags: ['Open Source', 'Kanban', 'Task Management', 'Offline', 'Productivity'],
-    url: 'https://github.com/jviaches/projscope-tasks-source',
-    image: 'https://raw.githubusercontent.com/jviaches/projscope-tasks-source/main/images/dashboard.PNG',
-  },
-  {
-    name: 'myhinge',
-    description: 'A goal-focused daily habit tracker built around one powerful question: "What one thing, if done today, makes your day?" This progressive web app showcases modern full-stack development with real-time data sync, offline support, and a mobile-first design that works seamlessly across all devices.',
-    highlights: [
-      'PWA with offline support — installable on any device, no app store needed',
-      'Real-time data sync powered by Supabase (PostgreSQL + Auth)',
-      '16-week streak heatmap for visual progress tracking',
-      'Server-side rendering with Next.js for fast load times and SEO',
-    ],
-    language: 'Next.js',
-    tags: ['React', 'PWA', 'Supabase', 'Habit Tracking', 'Productivity', 'Offline'],
-    url: 'https://my-hinge.netlify.app/',
-    image: 'https://myhinge.app/og-image.png',
-    isLive: true,
-    isLogo: true,
-  },
-  {
-    name: 'CxTrack',
-    description: 'An AI automation platform helping businesses streamline operations through intelligent voice agents, custom CRMs, and process audits. As CTO, I architected the technical foundation — from AI-powered phone systems that capture leads 24/7 to custom-built CRM solutions tailored to each client\'s workflow.',
-    highlights: [
-      'AI Voice Agents that answer calls, qualify leads, and book meetings automatically',
-      'Custom CRM systems built around real business workflows, not templates',
-      'AI Audits that map processes and uncover hidden revenue opportunities',
-      'Proven results: 3.2x average ROI in the first year for clients',
-    ],
-    language: 'AI / Automation',
-    tags: ['AI Voice', 'CRM', 'Automation', 'SaaS', 'Lead Generation', 'Business Intelligence'],
-    url: 'https://cxtrack.com/',
-    image: 'https://cxtrack.com/Logo/CxTrack_Gold_Logo.png',
-    isLive: true,
-    isLogo: true,
   },
 ];
 
@@ -85,51 +97,59 @@ export default function OpenSourcePage() {
               A mix of client work, internal tools, and open source projects we've released to the world. Free to use, open to contribute.
             </p>
           </div>
-          <ul className="oss-list">
-            {projects.map(project => (
-              <li key={project.url} className="oss-item">
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="oss-item__image-link">
-                  {project.image ? (
-                    <img
-                      src={project.image}
-                      alt={project.name}
-                      className={`oss-item__image${(project as { isLogo?: boolean }).isLogo ? ' oss-item__image--logo' : ''}`}
-                    />
-                  ) : (
-                    <div className="oss-item__image oss-item__image--placeholder">
-                      <span>{project.name}</span>
+          {categories.map(category => (
+            <div key={category.title} className="oss-category">
+              <div className="oss-category__header">
+                <h2 className="oss-category__title">{category.title}</h2>
+                <p className="oss-category__subtitle">{category.subtitle}</p>
+              </div>
+              <ul className="oss-grid">
+                {category.projects.map(project => (
+                  <li key={project.url} className="oss-card">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="oss-card__image-link">
+                      {project.image ? (
+                        <img
+                          src={project.image}
+                          alt={project.name}
+                          className={`oss-card__image${(project as { isLogo?: boolean }).isLogo ? ' oss-card__image--logo' : ''}`}
+                        />
+                      ) : (
+                        <div className="oss-card__image oss-card__image--placeholder">
+                          <span>{project.name}</span>
+                        </div>
+                      )}
+                    </a>
+                    <div className="oss-card__body">
+                      <h3 className="oss-card__name">{project.name}</h3>
+                      <p className="oss-card__desc">{project.description}</p>
+                      {project.highlights && (
+                        <ul className="oss-card__highlights">
+                          {project.highlights.map(h => (
+                            <li key={h}>{h}</li>
+                          ))}
+                        </ul>
+                      )}
+                      <ul className="service-card__tags oss-card__tags">
+                        {project.tags.map(tag => (
+                          <li key={tag}>{tag}</li>
+                        ))}
+                      </ul>
                     </div>
-                  )}
-                </a>
-                <div className="oss-item__body">
-                  <h2 className="oss-item__name">{project.name}</h2>
-                  <p className="oss-item__desc">{project.description}</p>
-                  {project.highlights && (
-                    <ul className="oss-item__highlights">
-                      {project.highlights.map(h => (
-                        <li key={h}>{h}</li>
-                      ))}
-                    </ul>
-                  )}
-                  <ul className="service-card__tags oss-item__tags">
-                    {project.tags.map(tag => (
-                      <li key={tag}>{tag}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="oss-item__actions">
-                  <span className="oss-item__lang">
-                    <span className="oss-item__lang-dot" />
-                    {project.language}
-                  </span>
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn--secondary oss-item__btn">
-                    {(project as { isLive?: boolean }).isLive ? <ExternalLinkIcon /> : <GithubIcon />}
-                    {(project as { isLive?: boolean }).isLive ? 'View Live App' : 'View on GitHub'}
-                  </a>
-                </div>
-              </li>
-            ))}
-          </ul>
+                    <div className="oss-card__footer">
+                      <span className="oss-card__lang">
+                        <span className="oss-card__lang-dot" />
+                        {project.language}
+                      </span>
+                      <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn--secondary oss-card__btn">
+                        {(project as { isLive?: boolean }).isLive ? <ExternalLinkIcon /> : <GithubIcon />}
+                        {(project as { isLive?: boolean }).isLive ? 'View Live App' : 'View on GitHub'}
+                      </a>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
     </main>
