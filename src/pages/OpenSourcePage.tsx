@@ -60,7 +60,7 @@ const categories = [
         ],
         language: 'Next.js',
         tags: ['React', 'PWA', 'Supabase', 'Habit Tracking', 'Productivity'],
-        url: 'https://my-hinge.netlify.app/',
+        url: 'https://myhinge.app/',
         image: 'https://myhinge.app/og-image.png',
         isLive: true,
         isLogo: true,
