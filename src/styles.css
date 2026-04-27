@@ -1009,31 +1009,59 @@ ul, ol { list-style: none; }
    Contact
    ============================================ */
 .contact {
-  padding: 120px 0;
-  background: var(--color-bg);
+  position: relative;
+  padding: 160px 0;
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
-.contact__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
+.contact__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.72);
 }
-.contact__info .section-tag { margin-bottom: 16px; }
-.contact__info .section-title {
-  text-align: left;
+.contact__content {
+  position: relative;
+  z-index: 1;
+}
+.contact__content .section-tag {
+  margin-bottom: 16px;
+  color: var(--color-accent);
+  border-color: rgba(13, 148, 136, 0.35);
+  background: rgba(13, 148, 136, 0.12);
+}
+.contact__title {
+  color: #fff !important;
   margin-bottom: 20px;
 }
 .contact__desc {
   font-size: 1rem;
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.72);
   line-height: 1.7;
-  margin-bottom: 32px;
+  max-width: 560px;
+  margin: 0 auto 40px;
+}
+.contact__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+.contact__actions .btn--outline {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+.contact__actions .btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 .contact__details {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 40px;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .contact__detail {
   display: flex;
@@ -1050,63 +1078,14 @@ ul, ol { list-style: none; }
   display: block;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin-bottom: 2px;
 }
 .contact__detail span {
   font-size: 0.9375rem;
-  color: var(--color-text);
-}
-/* Contact Form */
-.contact__form-wrap {
-  background: var(--color-bg-elevated);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 40px;
-  box-shadow: var(--card-shadow);
-}
-.contact__form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.form-group--full { grid-column: 1 / -1; }
-.form-group label {
-  display: block;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-  margin-bottom: 8px;
-}
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--color-border-subtle);
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-size: 0.9375rem;
-  font-family: inherit;
-  transition: all var(--transition-fast);
-  box-sizing: border-box;
-}
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--color-text-muted);
-}
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(13,148,136,0.12);
-}
-.form-group textarea { resize: vertical; min-height: 120px; }
-.contact__form .btn {
-  grid-column: 1 / -1;
-  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ============================================
@@ -1368,8 +1347,9 @@ ul, ol { list-style: none; }
   .case-studies { padding: 80px 0; }
   .case-studies__grid { grid-template-columns: 1fr; }
 
-  .contact { padding: 80px 0; }
-  .contact__inner { grid-template-columns: 1fr; gap: 48px; }
+  .contact { padding: 100px 0; }
+  .contact__actions { flex-direction: column; align-items: center; }
+  .contact__details { flex-direction: column; align-items: center; gap: 20px; }
 
   .footer__inner { grid-template-columns: 1fr; gap: 32px; }
 }
@@ -1378,8 +1358,7 @@ ul, ol { list-style: none; }
   .container { padding: 0 16px; }
   .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .hero__stat-number { font-size: 1.5rem; }
-  .contact__form { grid-template-columns: 1fr; }
-  .contact__form-wrap { padding: 24px; }
+
 }
 
 /* --- Transitions for animated elements --- */
