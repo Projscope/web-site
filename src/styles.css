@@ -1542,6 +1542,11 @@ ul, ol { list-style: none; }
   gap: 8px;
   white-space: nowrap;
 }
+.oss-card__btn-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
 
 @media (max-width: 768px) {
   .oss-page { padding-top: 100px; padding-bottom: 60px; }
