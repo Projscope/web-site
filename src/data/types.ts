@@ -53,6 +53,8 @@ export interface CaseStudyData {
     tags: CaseStudyTag[];
     backLabel: string;
     backTo: string;
+    image?: string;   // optional hero screenshot path (relative to public/)
+    imageAlt?: string;
   };
   highlights: Highlight[];
   sidebar: {

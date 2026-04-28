@@ -39,6 +39,17 @@ export default function CaseStudyLayout({ data }: { data: CaseStudyData }) {
         </div>
       </section>
 
+      {/* Screenshot */}
+      {data.meta.image && (
+        <div className="cs-screenshot-wrap">
+          <div className="container">
+            <div className="cs-screenshot">
+              <img src={data.meta.image} alt={data.meta.imageAlt ?? data.meta.title} />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Content */}
       <section className="cs-section">
         <div className="container">
