@@ -10,7 +10,7 @@ export const projscopeTasksData: CaseStudyData = {
     ],
     backLabel: 'Back to Projects',
     backTo: '/projects',
-    image: '/projscope-tasks-bright.png',
+    image: '/projscope-tasks-bright.svg',
     imageAlt: 'Projscope Tasks — Kanban board light theme',
   },
   highlights: [
