@@ -30,6 +30,7 @@ const categories = [
         tags: ['Electron', 'Angular', 'Cross-Platform', 'MP3', 'Desktop'],
         url: 'https://github.com/jviaches/projscope-music-player',
         image: 'https://raw.githubusercontent.com/jviaches/projscope-music-player/main/images/player.PNG',
+        pageUrl: '/project/music-player',
       },
       {
         name: 'Projscope Tasks',
