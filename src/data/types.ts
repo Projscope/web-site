@@ -72,6 +72,16 @@ export interface CaseStudyData {
   };
   results: ResultCard[];
   outcomeBlock?: ContentBlock;
+  downloads?: {
+    version: string;
+    releaseUrl: string;
+    assets: Array<{ label: string; url: string; icon?: string }>;
+  };
+  contributing?: {
+    title: string;
+    description: string;
+    steps: Array<{ icon: string; title: string; description: string; url: string; urlLabel: string }>;
+  };
   cta: {
     title: string;
     description: string;
