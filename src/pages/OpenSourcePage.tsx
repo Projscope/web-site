@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useSEO } from '../hooks/useSEO';
 
 const GithubIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
@@ -74,6 +75,11 @@ const categories = [
 ];
 
 export default function OpenSourcePage() {
+  useSEO({
+    title: 'Projects — Open Source & SaaS',
+    description: 'Explore open-source tools and live SaaS products built by Projscope — including Projscope Tasks (offline Kanban), Projscope Music Player, and myhinge.',
+    path: '/projects',
+  });
   return (
     <main className="oss-page">
       <section className="oss-hero">

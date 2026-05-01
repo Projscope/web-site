@@ -1,8 +1,17 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { CaseStudyData } from '../../data/types';
+import { useSEO } from '../../hooks/useSEO';
 
 export default function CaseStudyLayout({ data }: { data: CaseStudyData }) {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  useSEO({
+    title: data.meta.title,
+    description: data.meta.subtitle,
+    image: data.meta.image,
+    path: pathname,
+  });
 
   const handleBackClick = (e: React.MouseEvent) => {
     e.preventDefault();

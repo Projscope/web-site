@@ -6,9 +6,15 @@ import TechStack from '../components/home/TechStack';
 import Contact from '../components/home/Contact';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useSEO } from '../hooks/useSEO';
 
 export default function HomePage() {
   const { hash } = useLocation();
+  useSEO({
+    title: 'Software Architecture & Development',
+    description: 'Projscope delivers expert software architecture, full-stack development, rapid prototyping, and AI-powered solutions. 15+ years experience, 150+ projects shipped.',
+    path: '/',
+  });
 
   useEffect(() => {
     if (hash) {

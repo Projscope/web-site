@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://projscope.com/sitemap.xml
