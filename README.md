@@ -1,3 +1,8 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a91a73ed-ceb4-4c29-84d1-6fdccada6624/deploy-status)](https://app.netlify.com/projects/projscope/deploys)
+
+
+
 <img width="2717" height="1265" alt="image" src="https://github.com/user-attachments/assets/17c85b4e-2f2f-4275-b26b-6e7ee1735b39" />
 <img width="2712" height="1265" alt="image" src="https://github.com/user-attachments/assets/30f97103-c9b2-41b7-9d15-35c75774800b" />
 <img width="2712" height="1265" alt="image" src="https://github.com/user-attachments/assets/878584c8-5209-473e-ac90-0756795f4701" />
